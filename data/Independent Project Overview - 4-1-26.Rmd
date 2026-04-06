@@ -1,0 +1,37 @@
+---
+title: "Independent Project Overview"
+author: "Esha Prasad"
+date: "2026-04-01"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Introduction
+
+The adaptation of organisms to their environments is important to understanding how external factors affect evolution. This has been widely studied in large organisms, thanks to Darwin’s proposed theories of evolution, but what about the smaller organisms? Bacteria and archaea, unable to be seen with the human eye, undergo similar processes that allow them to properly adapt to the habitats that they are in. The research topic I want to focus on looks at how genetic variation among organisms of a single species allows them to live at different temperatures. My research draws genetic data from organisms that live in the sediment within a hot spring that has varying temperatures, ranging from 60°C to 90°C.
+
+Papers have been published to make a connection between codon usage in thermophilic versus non-thermophilic bacteria, looking at a phenomenon known as codon usage bias. This is when an organism has adapted to use one codon to code for an amino acid over another due to the nucleotides that are used (ex: using CGC over CGA to code for Arginine). One paper in particular (Mou et. al) looks at how thermophiles tend to have a higher G/C content compared to non-thermophiles. This difference is important because a high G/C content allows for greater DNA stability, meaning that DNA strands will not come apart easily at high temperatures.
+
+Mou Q-H, Hu Z, Zhang J, Daroch M and Tang J (2025) *Comparative genomics of thermosynechococcaceae and thermostichaceae: insights into codon usage bias.* Acta Biochim. Pol 71:13825. doi: 10.3389/abp.2024.13825
+
+### Research Question and Aims
+
+My research question is: How does genetic variation among organisms of a single species affect survival at different temperatures? My hypothesis, from reviewing literature, is that organisms that live at higher temperatures have adapted changes to their flexible genome through Single Nucleotide Polymorphisms (SNPs) and codon usage that allows for DNA stability at high temperatures.
+
+#### Specific Aim 1
+
+My first aim is to identify an organism using the relative abundance data provided by my lab to find a species that is largely present in hot sites, but not as present in colder ones and vice versa. This species will then be analyzed to identify SNPs and differences in codon usage among organisms within that species.
+
+### Scope of the Project
+
+This in-class project will focus on one of the two specific aims that I plan to cover in my thesis. I think it is a reasonably sized challenge to take on considering what we have already learned in class, but it should not be too difficult, especially since the data I need to use is already generated and put into Excel sheets.
+
+### Loading the Data
+
+```{r}
+heatmap_data <- read.csv("data/heatmap_data_rpkg_values_710.csv")
+head(heatmap_data)
+```
