@@ -89,4 +89,9 @@ gene_cor
 summary(lml)
 p1
 ```
+### Interpretation of Results
+
+In the generated heatmap, I was able to see which organisms were the most abundant in certain sites across the spring, and this aided in choosing the organisms I would use for my mock dataset.
+
+Because I used a mock data set to do a linear regression on gene count and nitrate reductase presence, there was a positive correlation between the two. I would hope to see this same correlation in an actual generated data set from my research.
 
